@@ -124,7 +124,7 @@ import pandas as pd
 df = pd.DataFrame(data, columns=header)
 del df['Date/Hour']
 
-#df.to_excel('/Users/JOHN/Desktop/resurses/weather289.xlsx', sheet_name='Budgets', index=False)
+
 driver.quit()
 
 current_datetime = str(datetime.now())
