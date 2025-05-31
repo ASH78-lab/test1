@@ -1,7 +1,9 @@
 name: Daily_bot
 
 on: 
-    workflow_dispatch:
+    push:
+    schedule:
+        - cron: '*/6 * * * *'
 
 
 
