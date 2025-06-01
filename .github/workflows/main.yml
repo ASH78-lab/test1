@@ -3,7 +3,7 @@ name: Daily_bot
 on: 
     push:
     schedule:
-        - cron: '*/60 * * * *'
+        - cron: '0 15 * * *'
 
 
 
