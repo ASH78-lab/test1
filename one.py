@@ -31,12 +31,12 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 
 
-driver.set_window_size(1800, 1000) 
+driver.set_window_size(1800, 1300) 
 
 
 
 driver.get("https://www.meteopt.com/modelos/gfs?lat=55.752&lon=37.616&lang=en")
-time.sleep(8)
+time.sleep(18)
 data=[]
 button = driver.find_element(By.XPATH,"/html/body/div[1]/main/section/div/div/div/div/div/div/div/div/div/div/div/span/div/div[1]/div[3]/button")
 driver.execute_script("arguments[0].click();", button)
