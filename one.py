@@ -35,7 +35,7 @@ driver.set_window_size(1800, 1300)
 
 
 
-driver.get('https://yandex.ru/maps/213/moscow/?ll=37.617700%2C55.755863&z=10')
+driver.get('https://yandex.ru/maps/213/moscow/?ll=37.729452%2C55.689740&z=13')
 time.sleep(18)
 
 
