@@ -43,16 +43,4 @@ screenshot_path = 'screenshot.png'
 
 driver.save_screenshot(screenshot_path)
 driver.quit()
-import os
-import subprocess
-try:
-    # Добавляем файл
-    subprocess.run(['git', 'add', screenshot_path], check=True)
-    # Создаем сообщение коммита
-    commit_message = 'Автоматический скриншот'
-    subprocess.run(['git', 'commit', '-m', commit_message], check=True)
-    # Пушим изменения
-    subprocess.run(['git', 'push'], check=True)
-    print("Скриншот успешно добавлен и отправлен в репозиторий.")
-except subprocess.CalledProcessError as e:
-    print(f"Ошибка при выполнении git-команд: {e}")
+
