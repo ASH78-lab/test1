@@ -38,9 +38,9 @@ driver.set_window_size(1800, 1300)
 driver.get('https://yandex.ru/maps/213/moscow/?ll=37.729452%2C55.689740&z=13')
 time.sleep(18)
 
-screenshot_path = 'screenshot.png'
 
 
-driver.save_screenshot(screenshot_path)
+
+driver.save_screenshot('./Screenshots/save_screenshot_method.png')
 driver.quit()
 
