@@ -41,6 +41,37 @@ time.sleep(18)
 
 
 
-driver.save_screenshot('./Screenshots/save_screenshot_method.png')
+driver.save_screenshot('screenshot.png')
+
+
+from selenium.webdriver.common.by import By
+
+from selenium.webdriver.common.keys import Keys
+import time
+
+
+# Путь к файлу изображения
+image_path = 'screenshot.png'
+
+# Настройка драйвера
+
+
+
+# Открываем сайт postimages.org
+driver.get('https://postimages.org/')
+
+# Находим кнопку "Choose images" или input[type='file']
+upload_input = driver.find_element(By.XPATH, '//input[@type="file"]')
+upload_input.send_keys(image_path)
+
+# Ждем завершения загрузки (можно подождать появления ссылки)
+time.sleep(10)  # подождите, пока изображение загрузится
+
+# Получаем ссылку на изображение
+link_element = driver.find_element(By.XPATH, '//input[@id="code_html"]')
+image_url = link_element.get_attribute('value')
+print('Ссылка на изображение:', image_url)
+
+
 driver.quit()
 
