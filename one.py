@@ -51,7 +51,7 @@ import time
 
 
 # Путь к файлу изображения
-image_path = 'screenshot.png'
+image_path = 'https://github.com/ASH78-lab/test1/blob/main/screenshot.png'
 
 # Настройка драйвера
 
